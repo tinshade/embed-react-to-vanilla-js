@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+button {
+  outline: none !important;
+  border: none !important;
+  background-color: transparent;
+}
+.chatbot {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  height: 50dvh;
+}
+.chatbot-collapsed {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  height: 5dvh;
+}
+.chatbot-header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #e6e6fa;
+  color: purple;
+  font-weight: 700;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+.chatbot-header button {
+  width: 25px;
+  height: 25px;
+  align-content: center;
+  align-items: center;
+  color: #e6e6fa;
+  background-color: purple;
+  border-radius: 100%;
+  font-size: 0.7rem;
+}
+.chatbot-body {
+  max-height: 39dvh;
+  min-height: 39dvh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0.8rem;
+}
+.chat-input-container {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  height: fit-content;
+  background-color: #f5f5f5;
+}
+.chat-input-container button {
+  padding: 10px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  background-color: purple;
+  color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  transition: all ease-in-out;
+}
+.chat-input-container button:hover {
+  color: purple;
+  background-color: #e6e6fa;
+}
+.chat-input-box {
+  background-color: #fff;
+  border-radius: 4px;
+  color: purple;
+  outline: none;
+  border: none;
+  height: fit-content;
+  width: 100%;
+  overflow: auto;
+}
+.message {
+  padding: 0.3rem 1rem;
+  color: #000;
+  border-radius: 10px;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  align-content: baseline;
+}
+.message-text {
+  font-size: 0.9rem;
+  padding: 0;
+  margin: 0;
+}
+.incoming {
+  border-radius: 0 10px 10px;
+  background-color: #e6e6fa;
+}
+.outgoing {
+  align-self: flex-end;
+  align-content: center;
+  border-radius: 10px 0 10px 10px;
+  background-color: purple;
+  color: #e6e6fa;
+}
+.hidden {
+  display: none;
+}
